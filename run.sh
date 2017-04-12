@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "[mongodb]\nname=MongoDB Repository\nbaseurl=https://repo.mongodb.org/yum/redhat/6/mongodb-org/3.2/`uname -m`/\ngpgcheck=0\nenabled=1" > /etc/yum.repos.d/mongodb.repo && yum install -y mongodb-org memcached
+rpm -Uvh http://dev.mysql.com/get/mysql-community-release-el6-5.noarch.rpm && yum -y install mysql-community-server
